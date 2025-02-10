@@ -1,4 +1,4 @@
-# Sorteio de Amigos
+# Challenge Amigo Secreto
 
 Este projeto é um desafio feito para ser apresentado ao curso de programação básico da Oracle One em parceria com a Alura, foi desenvolvida uma aplicação web simples para realizar sorteios de amigos de forma aleatória. Ele permite adicionar nomes a uma lista e sortear um nome aleatório entre os participantes.
 
