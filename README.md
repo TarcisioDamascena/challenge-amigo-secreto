@@ -41,5 +41,5 @@ Este projeto é um desafio feito para ser apresentado ao curso de programação 
 
 ---
 
-Feito com ❤️ por [Seu Nome](https://github.com/TarcisioDamascena)
+Feito com ❤️ por [Tarcisio](https://github.com/TarcisioDamascena)
 
