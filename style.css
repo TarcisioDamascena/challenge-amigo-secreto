@@ -110,6 +110,7 @@ body {
     gap: var(--spacing-xs);
     margin-bottom: var(--spacing-md);
 }
+
 /* Input Group */
 .friend-selector input {
     width: 100%;
@@ -234,4 +235,42 @@ body {
     .friend-selector {
         padding: 0 var(--spacing-xs);
     }
+}
+
+.error-message {
+    color: #ff4444;
+    background-color: #ffe6e6;
+    padding: 10px;
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-family-secondary);
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.list-container {
+    margin: var(--spacing-md) 0;
 }

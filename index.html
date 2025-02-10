@@ -1,48 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Aplicativo de sorteio para Amigo Secreto - Organize seu amigo secreto de forma fácil e divertida">
+    <meta name="theme-color" content="#4B69FD">
+    
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <title>Amigo Secreto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Amigo Secreto - Sorteio Online</title>
 </head>
 
 <body>
     <main class="main-content">
-        <header class="header-banner">
+        <header class="header-banner" role="banner">
             <h1 class="main-title">Amigo Secreto</h1>
-            <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
+            <img src="assets/amigo-secreto.png" 
+                 alt="Ilustração de presentes e elementos natalinos" 
+                 width="300" 
+                 height="200"
+                 loading="eager">
         </header>
 
-        <section class="input-section">
-            <h2 class="section-title">Digite o nome dos seus amigos</h2>
+        <section class="input-section" aria-labelledby="section-title">
+            <h2 class="section-title" id="section-title">Digite o nome dos seus amigos</h2>
+            
             <div class="friend-selector">
-                <div class="friend-input">
-                    <input type="text" id="friendInput" placeholder="Digite o nome do amigo" aria-label="Nome do amigo">
-                    <button id="addButton" class="button-add" aria-label="Adicionar amigo">
+                <form class="friend-input" onsubmit="return false;">
+                    <label for="friendInput" class="visually-hidden">Nome do amigo</label>
+                    <input type="text" 
+                           id="friendInput" 
+                           placeholder="Digite o nome do amigo" 
+                           autocomplete="off"
+                           maxlength="50"
+                           required>
+                    
+                    <button type="button" 
+                            id="addButton" 
+                            class="button-add">
                         Adicionar amigo
                     </button>
+                </form>
+
+                <div class="list-container" role="region" aria-live="polite">
+                    <h3 class="visually-hidden">Lista de amigos adicionados</h3>
+                    <ul id="friendsList" 
+                        class="name-list" 
+                        aria-label="Lista de amigos"></ul>
                 </div>
 
-                <ul id="friendsList" class="name-list" aria-label="Lista de amigos" role="list"></ul>
-
-                <button id="drawButton" class="button-draw" aria-label="Sortear amigo">
-                    <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
+                <button type="button" 
+                        id="drawButton" 
+                        class="button-draw">
+                    <img src="assets/play_circle_outline.png" 
+                         alt="" 
+                         width="24" 
+                         height="24"
+                         aria-hidden="true">
                     Sortear amigo
                 </button>
 
-                <div id="drawResult" class="result-container" aria-live="polite"></div>
+                <div id="drawResult" 
+                     class="result-container" 
+                     role="status" 
+                     aria-live="polite"></div>
             </div>
         </section>
     </main>
 
     <script src="app.js" defer></script>
 </body>
-
 </html>
