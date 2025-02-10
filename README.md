@@ -19,19 +19,19 @@ Este projeto é um desafio feito para ser apresentado ao curso de programação 
 
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/TarcisioDamascena/challenge-amigo-secreto.git
    ```
 2. Acesse a pasta do projeto:
    ```sh
-   cd nome-do-repositorio
+   cd challenge-amigo-secreto
    ```
 3. Abra o arquivo `index.html` no navegador.
 
 ## 📷 Demonstração
-
-![image](https://github.com/user-attachments/assets/29ccd3ba-a389-45df-8adb-35dd7ab60aa8)
-![image](https://github.com/user-attachments/assets/4ebffb95-8a67-45fd-bde5-4ea352da33ea)
-![image](https://github.com/user-attachments/assets/87210593-b9c6-4f17-8907-08d12b4091a5)
+![image](https://github.com/user-attachments/assets/c602d789-d241-467c-ad55-21cbab57c84c)
+![image](https://github.com/user-attachments/assets/2ba99fd5-1f2a-4503-9286-f0a57db40b34)
+![image](https://github.com/user-attachments/assets/ffbe5b48-5df0-4f64-b1ec-5ca30406d976)
+![image](https://github.com/user-attachments/assets/30599a7b-a457-472c-93bc-5d5a3b4b0931)
 
 ## 🛠 Melhorias Futuras
 
